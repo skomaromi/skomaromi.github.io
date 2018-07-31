@@ -1,0 +1,3 @@
+[submodule "vp"]
+	path = vp
+	url = https://github.com/skomaromi/vp
