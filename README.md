@@ -3,7 +3,7 @@
 Personal GitHub page serving as a portfolio showcasing projects which were
 developed recently. For each project a screenshot or logo is provided, as well
 as a brief description, used technology stack and links to associated Git
-repositories.
+repositories when available.
 
 Based on Material Design for Bootstrap (MDBootstrap). Uses Masonry to achieve
 a responsive grid layout with smooth grid item rearrangement animation when

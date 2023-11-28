@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Sini&scaron;a Komaromi - Polymath Software Developer</title>
+        <title>Sini&scaron;a Komaromi - Senior Game Developer</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,265 +12,817 @@
 
         <!-- Bootstrap, MDBootstrap -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
 
         <link href="res/css/style.css" rel="stylesheet">
     </head>
     <body>
         <div class="jumbotron">
             <h1>Sini&scaron;a Komaromi</h1>
-            <p>Polymath Software Developer</p>
+            <p>Senior Game Developer specialized in Unity Engine programming</p>
             <ul>
-                <li>
-                    <a href="https://gitlab.com/sylck"><i class="fa fa-gitlab" aria-hidden="true"></i>GitLab</a>
-                </li>
                 <li>
                     <a href="https://github.com/skomaromi"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
                 </li>
                 <li>
-                    <a href="mailto:sinisa.komaromi@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a>
+                    <a href="https://gitlab.com/sylck"><i class="fa fa-gitlab" aria-hidden="true"></i>GitLab</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sinisa-komaromi"><i class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <li>
+                    <a href="mailto:sinisa.komaromi@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</a>
+                </li>
+                <li>
+                    <a href="Sinisa_Komaromi-Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i>Resume</a>
                 </li>
             </ul>
         </div>
-        <div class="container">
+        <div class="separator below-jumbotron"></div>
+        <div class="container-fluid">
             <h2>Portfolio</h2>
             <div class="grid">
                 <div class="grid-sizer col-12 col-sm-6 col-lg-3"></div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
-                            <a href="res/img/sps.gif">
-                                <img src="res/img/sps.gif" alt="Some Polygons Suck">
+                            <img src="res/img/project_rts_1.png" alt="RTS project #1">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#project-rts-1-modal">
+                                <h4 class="card-title">RTS project #1</h4>
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Some Polygons Suck</h4>
-                            <p class="card-text">
-                                First-person shooter game where the protagonist
-                                is a cube trapped in a world dominated by
-                                cylinders. Player can collect items and
-                                organize them in the dedicated inventory
-                                interface.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>Unity</li>
-                                    <li>C#</li>
-                                </ul>
+
+                            <!-- modal itself -->
+                            <div id="project-rts-1-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <!-- close button -->
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+
+                                            <!-- carousel -->
+                                            <div id="project-rts-1-modal-carousel" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <a href="res/img/project_rts_1_1.png" target="_blank">
+                                                            <img src="res/img/project_rts_1_1.png" alt="RTS project #1">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <a href="res/img/project_rts_1_2.png" target="_blank">
+                                                            <img src="res/img/project_rts_1_2.png" alt="RTS project #1">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <span class="carousel-control-container carousel-control-prev">
+                                                    <a class="carousel-control" href="#project-rts-1-modal-carousel" data-slide="prev" aria-hidden="true">
+                                                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="carousel-control-container carousel-control-next">
+                                                    <a class="carousel-control" href="#project-rts-1-modal-carousel" data-slide="next" aria-hidden="true">
+                                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">RTS project #1</h5>
+                                            </div>
+                                        </div>
+
+                                        <!-- modal content -->
+                                        <div class="modal-body">
+                                            <p>
+                                                An innovative game which fuses traditional RTS elements with elements inspired by They Are Billions.
+                                            </p>
+
+                                            <p>
+                                                Some of the work I have contributed included:
+                                            </p>
+                                            <ul>
+                                                <li>implementing new gameplay elements and adding features to existing ones, ensuring minimal performance impact in the process;</li>
+                                                <li>
+                                                    architecting and implementing a substantial portion of game's visual flow using Unity's UI Toolkit (formerly UI Elements), which involved:
+                                                    <ul>
+                                                        <li>implementing code responsible for UI behavior (UX) and layout management;</li>
+                                                        <li>adhering to the reference UI design in Figma, exporting and modifying it as needed to align with game design;</li>
+                                                        <li>fine-tuning USS styling and UXML layout code;</li>
+                                                    </ul>
+                                                </li>
+                                                <li>development of features which make use of shaders (HLSL, Unity Shader Graph) and the Scriptable Render Pipeline (SRP) API as well as features leveraging Unity's VFX Graph;</li>
+                                                <li>resolving reported issues and revising features in response to feedback and evolving design requirements</li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                    <li>Svelto ECS</li>
+                                                    <li>Extenject</li>
+                                                    <li>Unity Addressable Asset System</li>
+                                                    <li>Unity UI Toolkit</li>
+                                                    <li>Figma</li>
+                                                    <li>HLSL</li>
+                                                    <li>Unity Scriptable Render Pipeline</li>
+                                                    <li>Unity Shader Graph</li>
+                                                    <li>Unity VFX Graph</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://gitlab.com/sylck/sps">
-                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
-                            <a href="res/img/vand.png">
-                                <img src="res/img/vand.png" alt="V&auml;nd">
+                            <img src="res/img/project_survival_2.png" alt="Survival game project #2">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#project-survival-2-modal">
+                                <h4 class="card-title">Survival game project #2</h4>
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">V&auml;nd</h4>
-                            <p class="card-text">
-                                Responsive web application designed for
-                                posting classified advertisements with a name
-                                inspired by a certain Scandinavian store
-                                selling furniture.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>Django</li>
-                                    <li>MDBootstrap</li>
-                                    <li>REST</li>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
-                                    <li>jQuery</li>
-                                </ul>
+
+                            <!-- modal itself -->
+                            <div id="project-survival-2-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/project_survival_2.png" target="_blank">
+                                                <img src="res/img/project_survival_2.png" alt="Survival game project #2">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Survival game project #2</h5>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A survival game with a playful twist, presented from a first-person shooter perspective.
+                                            </p>
+
+                                            <p>
+                                                Here are some of the features I've implemented as part of this project:
+                                            </p>
+                                            <ul>
+                                                <li>utilized networking solution features to dynamically toggle networked objects based on player proximity with the aim of reducing resource usage (CPU, GPU, RAM);</li>
+                                                <li>implemented a world persistence solution from scratch designed with world streaming in mind with long-running operations (e.g. I/O tasks) spread over multiple frames; later integrated with previously existing game code</li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                    <li>MLAPI</li>
+                                                    <li>JSON</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://gitlab.com/sylck/vand">
-                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/project_rpg_2.png" alt="RPG project #2">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#project-rpg-2-modal">
+                                <h4 class="card-title">RPG project #2</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="project-rpg-2-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/project_rpg_2.png" target="_blank">
+                                                <img src="res/img/project_rpg_2.png" alt="RPG project #2">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">RPG project #2</h5>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A 3D isometric RPG set in a distinctive, otherworldly realm.
+                                            </p>
+
+                                            <p>
+                                                Here is a selection of the work done on features in this project:
+                                            </p>
+                                            <ul>
+                                                <li>implemented altering gameplay mechanics, adjusting world appearance by manipulating material properties at runtime, and updating the user interface - all in response to an in-game trigger or player input;</li>
+                                                <li>an enemy inventory system, which allows random weapon selection and weapon unequipping based on changes in world state;</li>
+                                                <li>creating new and modifying existing enemy behavior trees;</li>
+                                                <li>integrating visual effects according to design requirements</li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unreal Engine</li>
+                                                    <li>C++</li>
+                                                    <li>Blueprints Visual Scripting</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/project_rpg_1.png" alt="RPG project #1">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#project-rpg-1-modal">
+                                <h4 class="card-title">RPG project #1</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="project-rpg-1-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/project_rpg_1.png" target="_blank">
+                                                <img src="res/img/project_rpg_1.png" alt="RPG project #1">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">RPG project #1</h5>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A 3D isometric role-playing game which blends classic gameplay mechanics with innovative twists within a distinctive world.
+                                            </p>
+
+                                            <p>
+                                                Here are some of the features I've implemented while working on this project:
+                                            </p>
+                                            <ul>
+                                                <li>modular procedural level generation system using a simplified two-dimensional random walk algorithm, accompanied with editor UI to make preliminary result visualization easier;</li>
+                                                <li>mechanism which crossfades visual effect weight and defines which types of enemies get spawned based on player’s proximity to a certain in-game region;</li>
+                                                <li>a system which allows defining actions upon enemy death, such as dropping items and changing player stats</li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/project_survival_1.png" alt="Survival game project #1">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#project-survival-1-modal">
+                                <h4 class="card-title">Survival game project #1</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="project-survival-1-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/project_survival_1.png" target="_blank">
+                                                <img src="res/img/project_survival_1.png" alt="Survival game project #1">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Survival game project #1</h5>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                A science-fantasy survival first-person shooter set in a unique world.
+                                            </p>
+
+                                            <p>
+                                                My contributions to this project encompassed a wide range of tasks and responsibilities, including:
+                                            </p>
+                                            <ul>
+                                                <li>implementing a dependency tree which defined prerequisites before a certain building or item was unlocked - implemented both the rule definition code, usable by game designers, as well as gameplay experience and UI code;</li>
+                                                <li>reworking existing world persistence solution to improve performance, usability and store more gameplay parts to the disk;</li>
+                                                <li>implementing support for multiple game store platforms (primarily Steam and Steamworks) to allow for client- and server-side ownership validation;</li>
+                                                <li>
+                                                    work related to multiplayer networking:
+                                                    <ul>
+                                                        <li>porting the game from one networking solution to another (MLAPI to Photon Bolt), introducing server authority and client-side prediction for some gameplay features as part of the process;</li>
+                                                        <li>implementing a custom network messaging system for interactable in-game vegetation to reduce network overhead incurred by synchronizing scene vegetation as individual network objects;</li>
+                                                        <li>adapting a third-party character controller solution (Kinematic Character Controller) for a server-authoritative networking library (Photon Bolt) while taking care of previously implemented movement-reliant gameplay code which relied on it;</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    world streaming features such as:
+                                                    <ul>
+                                                        <li>using Unity Addressable Asset System API to load and unload game content based on player proximity;</li>
+                                                        <li>splitting content scenes in cells, processing terrain objects to generate low polygon count equivalents, working with third-party assets (MicroSplat) to ensure matching appearance between the stand-in object and the original one as well as using network messaging to ensure both client and server have matching cell scenes loaded;</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    implementing rich CI/CD integration, which included:
+                                                    <ul>
+                                                        <li>Unity code which allows defining, customizing and building game presets from the editor;</li>
+                                                        <li>GitLab builder scripting with support for building any of previously defined presets and their deployment to target Steam branch with no user intervention</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                    <li>Unity Addressable Asset System</li>
+                                                    <li>GitLab CI/CD</li>
+                                                    <li>PowerShell</li>
+                                                    <li>SQLite</li>
+                                                    <li>MLAPI</li>
+                                                    <li>Photon Bolt</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/i_hate_running_backwards.png" alt="I Hate Running Backwards">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#i-hate-running-backwards-modal">
+                                <h4 class="card-title">I Hate Running Backwards</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="i-hate-running-backwards-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/i_hate_running_backwards.png" target="_blank">
+                                                <img src="res/img/i_hate_running_backwards.png" alt="I Hate Running Backwards">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">I Hate Running Backwards</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                I Hate Running Backwards is a never-ending adrenaline packed shoot'em down roguelite that puts the emphasis on destruction and fighting never ending waves of enemies while time traveling through procedurally generated worlds!
+                                            </p>
+
+                                            <p>
+                                                My involvement in this project spanned various tasks and responsibilities, including:
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    gameplay features like:
+                                                    <ul>
+                                                        <li>progression and statistics systems;</li>
+                                                        <li>simulating destructible scenery props using cubes to fill mesh shape, ensuring that when a prop is destroyed, it breaks into previously created cubes;</li>
+                                                    </ul>
+                                                <li>
+                                                    procedural level generation features such as:
+                                                    <ul>
+                                                        <li>filtering and spawning objects based on biome;</li>
+                                                        <li>randomly choosing between pickups or destructible scenery at a given spawn point</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://store.steampowered.com/app/575820/I_Hate_Running_Backwards/">
+                                                        <i class="fa fa-steam" aria-hidden="true"></i>Steam page
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/sps.gif" alt="Some Polygons Suck">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#some-polygons-suck-modal">
+                                <h4 class="card-title">Some Polygons Suck</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="some-polygons-suck-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/sps.gif" target="_blank">
+                                                <img src="res/img/sps.gif" alt="Some Polygons Suck">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Some Polygons Suck</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                First-person shooter game where the protagonist is a cube trapped in a world dominated by cylinders. Player can collect items and organize them in the dedicated inventory interface.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Unity</li>
+                                                    <li>C#</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://gitlab.com/sylck/sps">
+                                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
+                        <div class="card-img-top">
+                            <img src="res/img/vand.png" alt="V&auml;nd">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#vand-modal">
+                                <h4 class="card-title">V&auml;nd</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="vand-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/vand.png" target="_blank">
+                                                <img src="res/img/vand.png" alt="V&auml;nd">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">V&auml;nd</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                Responsive web application designed for posting classified advertisements.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Django</li>
+                                                    <li>MDBootstrap</li>
+                                                    <li>REST</li>
+                                                    <li>Python</li>
+                                                    <li>JavaScript</li>
+                                                    <li>jQuery</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://gitlab.com/sylck/vand">
+                                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item col-12 col-sm-6 col-lg-3">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
                             <img src="res/img/flack.png" alt="Flack">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Flack</h4>
-                            <p class="card-text">
-                                Simple chat system which allows users to
-                                exchange text messages with files and GPS
-                                location optionally attached to them.
-                                Comprises a server and Android client component.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>Django</li>
-                                    <li>IPFS</li>
-                                    <li>WebSocket</li>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>Android</li>
-                                    <li>Swagger</li>
-                                    <li>REST</li>
-                                </ul>
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#flack-modal">
+                                <h4 class="card-title">Flack</h4>
+                            </a>
+
+                            <!-- modal itself -->
+                            <div id="flack-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <img src="res/img/flack.png" alt="Flack">
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Flack</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                Simple chat system which allows users to exchange text messages with files and GPS location optionally attached to them. Comprises a server and Android client component.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Django</li>
+                                                    <li>IPFS</li>
+                                                    <li>WebSocket</li>
+                                                    <li>Java</li>
+                                                    <li>Python</li>
+                                                    <li>Android</li>
+                                                    <li>Swagger</li>
+                                                    <li>REST</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://github.com/skomaromi/flack-server">
+                                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository (server)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://github.com/skomaromi/flack-client-android">
+                                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository (Android client)
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/skomaromi/flack-server">
-                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository (server)
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/skomaromi/flack-client-android">
-                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository (Android client)
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
-                            <a href="res/img/dataviz.png">
-                                <img src="res/img/dataviz.png" alt="Interactive map of Croatia">
+                            <img src="res/img/dataviz.png" alt="Interactive map of Croatia">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#dataviz-modal">
+                                <h4 class="card-title">Interactive map of Croatia</h4>
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Interactive map of Croatia</h4>
-                            <p class="card-text">
-                                Choropleth map application showing evolution
-                                of indicators related to economy for years
-                                2007 to 2017.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>D3.js</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
+
+                            <!-- modal itself -->
+                            <div id="dataviz-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/dataviz.png" target="_blank">
+                                                <img src="res/img/dataviz.png" alt="Interactive map of Croatia">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Interactive map of Croatia</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                Choropleth map application showing evolution of indicators related to economy for years 2007 to 2017.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>D3.js</li>
+                                                    <li>JavaScript</li>
+                                                    <li>HTML</li>
+                                                    <li>CSS</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://github.com/skomaromi/dataviz">
+                                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://skomaromi.github.io/dataviz/">
+                                                        <i class="fa fa-globe" aria-hidden="true"></i>Live demo
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/skomaromi/dataviz">
-                                        <i class="fa fa-github" aria-hidden="true"></i>Git repository
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://skomaromi.github.io/dataviz/">
-                                        <i class="fa fa-globe" aria-hidden="true"></i>Live demo
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
-                            <a href="res/img/simpl.png">
-                                <img src="res/img/simpl.png" alt="SIMPL">
+                            <img src="res/img/simpl.png" alt="SIMPL">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#simpl-modal">
+                                <h4 class="card-title">SIMPL</h4>
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">SIMPL</h4>
-                            <p class="card-text">
-                                Extensible image viewer application with
-                                filter plug-in system written from scratch.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>PySide</li>
-                                    <li>OpenCV</li>
-                                    <li>Qt</li>
-                                </ul>
+
+                            <!-- modal itself -->
+                            <div id="simpl-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/simpl.png" target="_blank">
+                                                <img src="res/img/simpl.png" alt="SIMPL">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">SIMPL</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                Extensible image viewer application with filter plug-in system written from scratch.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Python</li>
+                                                    <li>PySide</li>
+                                                    <li>OpenCV</li>
+                                                    <li>Qt</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://gitlab.com/sylck/simpl">
+                                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://gitlab.com/sylck/simpl">
-                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item col-12 col-sm-6 col-lg-3">
-                    <div class="card">
+                    <div class="card no-card-body">
                         <div class="card-img-top">
-                            <a href="res/img/sentilens.png">
-                                <img src="res/img/sentilens.png" alt="Sentilens">
+                            <img src="res/img/sentilens.png" alt="Sentilens">
+
+                            <!-- modal trigger -->
+                            <a class="card-title-modal-hint" data-toggle="modal" data-target="#sentilens-modal">
+                                <h4 class="card-title">Sentilens</h4>
                             </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Sentilens</h4>
-                            <p class="card-text">
-                                Web map application which converts and
-                                displays satellite imagery generated as part
-                                of the Sentinel-2 mission of Copernicus program.
-                            </p>
-                            <div class="languages-frameworks">
-                                <small>Languages and frameworks</small>
-                                <ul>
-                                    <li>Django</li>
-                                    <li>Leaflet</li>
-                                    <li>Python</li>
-                                    <li>GDAL</li>
-                                    <li>PostgreSQL</li>
-                                    <li>JavaScript</li>
-                                </ul>
+
+                            <!-- modal itself -->
+                            <div id="sentilens-modal" class="modal fade">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-body p-0">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span>&times;</span>
+                                            </button>
+                                            <a href="res/img/sentilens.png" target="_blank">
+                                                <img src="res/img/sentilens.png" alt="Sentilens">
+                                            </a>
+                                            <div class="modal-title-row">
+                                                <h5 class="modal-title">Sentilens</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>
+                                                Web map application which converts and displays satellite imagery generated as part of the Sentinel-2 mission of Copernicus program.
+                                            </p>
+
+                                            <div class="languages-frameworks">
+                                                <small>Languages and frameworks</small>
+                                                <ul>
+                                                    <li>Django</li>
+                                                    <li>Leaflet</li>
+                                                    <li>Python</li>
+                                                    <li>GDAL</li>
+                                                    <li>PostgreSQL</li>
+                                                    <li>JavaScript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://gitlab.com/sylck/sentilens">
+                                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-bottom">
-                            <ul>
-                                <li>
-                                    <a href="https://gitlab.com/sylck/sentilens">
-                                        <i class="fa fa-gitlab" aria-hidden="true"></i>Git repository
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="separator"></div>
         <footer class="page-footer">
-            &copy; 2020 Sini&scaron;a Komaromi.
+            &copy; <span id="year"></span> Sini&scaron;a Komaromi.
         </footer>
 
         <!-- scripts go here -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script src="res/js/main.js"></script>
     </body>
